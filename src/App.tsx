@@ -62,13 +62,6 @@ const ProjectCard = ({ project }: { project: typeof portfolioData.projects[0] })
                     {project.tech.map(t => <Badge key={t}>{t}</Badge>)}
                   </div>
                 </div>
-                <div className="flex gap-4 pt-4 border-t border-white/5 items-center justify-between" onClick={(e) => e.stopPropagation()}>
-                  <div className="flex gap-4">
-                    <a href={project.demo} className="flex items-center gap-2 text-sm font-bold text-gray-400 hover:text-white transition-colors">
-                      <ExternalLink size={16} /> Live Demo
-                    </a>
-                  </div>
-                </div>
               </div>
             </div>
           </motion.div>
