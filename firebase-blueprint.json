@@ -1,0 +1,16 @@
+{
+  "collections": {
+    "messages": {
+      "documents": {
+        "example-message": {
+          "fields": {
+            "name": "John Doe",
+            "email": "john@example.com",
+            "message": "Hello there!",
+            "createdAt": "serverTimestamp"
+          }
+        }
+      }
+    }
+  }
+}

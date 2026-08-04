@@ -1,0 +1,11 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /messages/{messageId} {
+      // Anyone can write a message (since it's a public contact form)
+      allow create: if true;
+      // Nobody can read or update from the client
+      allow read, update, delete: if false;
+    }
+  }
+}
